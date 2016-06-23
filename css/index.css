@@ -1,44 +1,116 @@
-*{margin:0;padding: 0;}
-body{background-color:#f5f5f5;}
-.header{display: block;}
-#banner{width: 100%;height: auto;min-width: 1000px;}/* 始终随容器宽度变化 */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f5f5f5;
+}
+.header {
+  display: block;
+}
+#banner {
+  width: 100%;
+  height: auto;
+  min-width: 1000px;
+}
 
-.footer{
-	width: 1100px;
-	margin: 0 auto;
-}
-.leftzone{
-	position: absolute;	
-}
-.leftzone img{
-	max-width:300px;
-}
-#download{width: 100%;height: 100%;}
+/* 始终随容器宽度变化 */
 
-.rightzone{
-	/* width: 60%;height: auto;min-width: 900px; */
-	margin-left:30%;
+.footer {
+  width: 1100px;
+  margin: 0 auto;
 }
-#frame{position: absolute;max-width: 800px;}
-#fix{position: fixed;right: 20px;top: 40px;max-width: 150px;height: auto;}
+.leftzone {
+  position: absolute;
+}
+.leftzone img {
+  max-width: 300px;
+}
+#download {
+  width: 100%;
+  height: 100%;
+}
+.rightzone {
+  /* width: 60%;height: auto;min-width: 900px; */
+  margin-left: 30%;
+}
+#frame {
+  position: absolute;
+  max-width: 800px;
+}
+#fix {
+  position: fixed;
+  right: 20px;
+  top: 40px;
+  max-width: 150px;
+  height: auto;
+	z-index: 100;
+}
+
 /* Q1:当screen.width<900px时，pics插入---可js 当width过小时属性变换 绝对定位*/
+
+
 /* √Q2:pics应偏右 A:banner设置绝对定位*/
+
+
 /* Q3:图未随着框变化 */
-#container { width: 600px; height: 330px; overflow: hidden; position: relative;margin-left: 20%;left: -50px; padding-top: 100px;}
-#list { width: 3600px; height: 330px; position: absolute; z-index: 1;}
-#list img { float: left;width: 600px;height: auto;}
-#buttons { position: absolute; height: 10px; width: 100px; z-index: 2; bottom: 20px; left: 250px;}
-#buttons span { cursor: pointer; float: left; border: 1px solid #fff; width: 10px; height: 10px; border-radius: 50%; background: #333; margin-right: 5px;}
-#buttons .on {  background: orangered;}
 
-#container:hover .arrow { display: block;}
-
-.arrow{
-	width: 50px; 
-    height: 50px;  
-    position: absolute;
+#container {
+  width: 600px;
+  height: 330px;
+  overflow: hidden;
+  position: relative;
+  margin-left: 20%;
+  left: -50px;
+  padding-top: 100px;
 }
-#prev {z-index: 3;    margin-top: -193px;
-    margin-left: 3px;}
-#next {z-index: 3;    margin-left: 745px;
-    margin-top: -193px;}
+#list {
+  width: 3600px;
+  height: 330px;
+  position: absolute;
+  z-index: 1;
+}
+#list img {
+  float: left;
+  width: 600px;
+  height: auto;
+}
+#buttons {
+  position: absolute;
+  height: 10px;
+  width: 100px;
+  z-index: 2;
+  bottom: 20px;
+  left: 250px;
+}
+#buttons span {
+  cursor: pointer;
+  float: left;
+  border: 1px solid #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #333;
+  margin-right: 5px;
+}
+#buttons .on {
+  background: orangered;
+}
+#container:hover .arrow {
+  display: block;
+}
+.arrow {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+#prev {
+  z-index: 3;
+  margin-top: -193px;
+  margin-left: 3px;
+}
+#next {
+  z-index: 3;
+  margin-left: 745px;
+  margin-top: -193px;
+}
