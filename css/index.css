@@ -20,7 +20,7 @@ body{background-color:#f5f5f5;}
 	margin-left:30%;
 }
 #frame{position: absolute;max-width: 800px;}
-#fix{position: fixed;right: 20px;top: 40px;max-width: 300px;height: auto;}
+#fix{position: fixed;right: 20px;top: 40px;max-width: 150px;height: auto;}
 /* Q1:当screen.width<900px时，pics插入---可js 当width过小时属性变换 绝对定位*/
 /* √Q2:pics应偏右 A:banner设置绝对定位*/
 /* Q3:图未随着框变化 */
